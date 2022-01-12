@@ -1,0 +1,34 @@
+{
+    "name": "bagisto/bagisto-aba-payment",
+    "description": "Bagisto ABA payment gateway.",
+    "keywords": [
+        "bagisto",
+        "aba payment"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-aba-payment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagisto"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-user": "dev-master",
+        "bagisto/laravel-ui": "dev-master",
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Aba\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Aba\\Providers\\AbaServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
